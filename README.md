@@ -21,7 +21,10 @@ This Python script automates the process of renaming PDF files based on an Excel
    git clone https://github.com/yourusername/pdf-renaming-automation.git
 
 2. Install the required libraries:
-3. Ensure your Excel file (Temp.xlsx) is in the root directory, with columns:
+   ```bash
+   pip install pandas
+
+4. Ensure your Excel file (Temp.xlsx) is in the root directory, with columns:
 
 Old Names: Contains the current PDF names.
 New Names: Contains the new names for the PDF files.
@@ -37,10 +40,17 @@ he script will rename the PDF files based on the data in the Excel sheet.
 ## Example
 If Temp.xlsx contains:
 
-Old Names   New Names
-file1.pdf	  new_file1.pdf
-file2.pdf	  new_file2.pdf
+| Old Names  | New Names    |
+|------------|--------------|
+|file1.pdf	 | new_file1.pdf|
+|file2.pdf	 | new_file2.pdf|
+
 The script will rename file1.pdf to new_file1.pdf, and so on.
+
+## Instructions for GitHub
+1. Create a new GitHub repository.
+2. Add the Python script provided (rename_pdfs.py), Temp.xlsx example (your excel file), and README.md file.
+3. Commit and push the files to your GitHub repository.
 
 
 
